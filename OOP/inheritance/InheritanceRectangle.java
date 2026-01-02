@@ -34,6 +34,7 @@ class Cuboid extends Rectangle {
 
 public class InheritanceRectangle {
     public static void main(String[] args) {
-
+            Cuboid c = new Cuboid(5, 3, 15);
+            System.out.println(c.volume());
     }
 }
