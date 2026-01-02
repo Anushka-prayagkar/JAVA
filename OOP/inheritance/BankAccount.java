@@ -58,7 +58,22 @@ class SavingsAccount extends Account {
         setbalance(getbalance() - amount);
         System.out.println("Amount Withdrawn: " + amount);
     }
+    void fixedDeposit(double amount) {
+        if(amount <= getbalance()) {
+            setbalance(getbalance() - amount);
+            System.out.println("Fixed Deposit created: " + amount);
+        }
+        else {
+            System.out.println("Balance not enough.");
+        }
+    }
+    void liquidate(double amount) {
+        setbalance(getbalance() + amount);
+        System.out.println("FD liquidated: " + amount);
+    }
 }
+
+
 public class BankAccount {
     public static void main(String[] args) {
         
