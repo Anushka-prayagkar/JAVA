@@ -108,6 +108,14 @@ class LoanAccount extends Account {
 
 public class BankAccount {
     public static void main(String[] args) {
+        SavingsAccount s = new SavingsAccount("167", "Anushka Prayagkar", "Mumbai", "1234123400", "11-02-2006", 100000);
+
+        System.out.println("Savings Account Details:");
+        s.deposit(50000);
+        s.withdraw(10000);
+        s.fixedDeposit(15000);
+        s.liquidate(7500);
+        s.display();
 
     }
 }
