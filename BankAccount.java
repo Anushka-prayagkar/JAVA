@@ -14,6 +14,30 @@ class Account {
         this.dob = dob;
         this.balance = balance;
     }
+
+     String getaccNo() {
+        return accNo;
+    }
+
+    String getname() {
+        return name;
+    }
+
+    String getaddress() {
+        return address;
+    }
+
+    String getphnNo() {
+        return phnNo;
+    }
+
+    String getdob() {
+        return dob;
+    }
+
+    double getbalance() {
+        return balance;
+    }
 }
 
 class SavingsAccount extends Account {
