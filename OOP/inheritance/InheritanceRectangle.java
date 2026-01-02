@@ -15,6 +15,17 @@ class Rectangle {
 
 class Cuboid extends Rectangle {
     double height;
+
+    Cuboid() {
+        height = 1;
+    }
+    Cuboid(double h) {
+        height = h;
+    }
+    Cuboid(double l, double b, double h) {
+        super(l, b);
+        height = h;
+    }
 }
 
 public class InheritanceRectangle {
