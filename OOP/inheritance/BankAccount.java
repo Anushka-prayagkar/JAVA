@@ -78,6 +78,18 @@ class LoanAccount extends Account {
     LoanAccount(String accNo, String name, String address, String PhnNo, String DOB, double balance) {
         super(accNo, name, address, PhnNo, DOB, balance);
     }
+    void payEMI(double amount) {
+        setbalance(setbalance() - amount);
+        System.out.println("EMI amount paid: " + amount);
+    }
+    void topupLoan(double amount) {
+        setbalance(setbalance() - amount);
+        System.out.println("Top-up Loan: " + amount);
+    }
+    void repayment(double amount) {
+        setbalance(setbalance() - amount);
+        System.out.println("Loan repayed: " + amount);
+    }
 }
 
 public class BankAccount {
