@@ -86,7 +86,9 @@ class SavingsAccount extends Account {
 
 
 class LoanAccount extends Account {
-
+    LoanAccount(String accNo, String name, String address, String phnNo, String dob, double balance) {
+        super(accNo, name, address, phnNo, dob, balance);
+    }
 }
 
 public class BankAccount {
