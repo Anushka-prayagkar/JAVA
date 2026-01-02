@@ -54,7 +54,36 @@ class SavingsAccount extends Account {
     SavingsAccount(String accNo, String name, String address, String phnNo, String dob, double balance) {
         super(accNo, name, address, phnNo, dob, balance);
     }
+
+        void deposit(double amount) {
+        setbalance(getbalance() + amount);
+        System.out.println("Amount Deposited: " + amount);
+    }
+
+    void withdraw(double amount) {
+        if (amount <= getbalance()) {
+            setbalance(getbalance() - amount);
+            System.out.println("Amount Withdrawn: " + amount);
+        } else {
+            System.out.println("Insufficient Balance");
+        }
+    }
+
+    void fixedDeposit(double amount) {
+        if (amount <= getbalance()) {
+            setbalance(getbalance() - amount);
+            System.out.println("Fixed Deposit created: " + amount);
+        } else {
+            System.out.println("Balance not enough.");
+        }
+    }
+
+    void liquidate(double amount) {
+        setbalance(getbalance() + amount);
+        System.out.println("FD liquidated: " + amount);
+    }
 }
+
 
 class LoanAccount extends Account {
 
