@@ -38,6 +38,16 @@ class Account {
     double getbalance() {
         return balance;
     }
+
+    void setbalance(double balance) {
+        this.balance = balance;
+    }
+
+    void display() {
+        System.out.println("Account Number: " + accNo);
+        System.out.println("Account Holder: " + name);
+        System.out.println("Balance: " + balance);
+    }
 }
 
 class SavingsAccount extends Account {
