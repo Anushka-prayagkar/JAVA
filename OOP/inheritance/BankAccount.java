@@ -33,6 +33,15 @@ class Account {
     double getbalance() {
         return balance;
     }
+
+    void setbalance(double balance) {
+        this.balance = balance;
+    }
+    void display() {
+        System.out.println("Account Number: " + accNo);
+        System.out.println("Account holder: " + name);
+        System.out.println("Balance: " + balance);
+    }
 }
 
 public class BankAccount {
