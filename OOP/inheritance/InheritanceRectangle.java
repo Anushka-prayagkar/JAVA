@@ -26,6 +26,10 @@ class Cuboid extends Rectangle {
         super(l, b);
         height = h;
     }
+
+    double volume() {
+        return length * breadth * height;
+    }
 }
 
 public class InheritanceRectangle {
