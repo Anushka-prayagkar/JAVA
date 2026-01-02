@@ -117,5 +117,15 @@ public class BankAccount {
         s.liquidate(7500);
         s.display();
 
+        System.out.println();
+
+        LoanAccount l = new LoanAccount("691", "Anushka Prayagkar", "Mumbai", "1234123400", "11-02-2006", 500000);
+
+        System.out.println("Loan Account Details:");
+        l.payEMI(7500);
+        l.topupLoan(25000);
+        l.repayment(10000);
+        l.display();
     }
+    
 }
