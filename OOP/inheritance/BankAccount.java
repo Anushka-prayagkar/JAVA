@@ -44,6 +44,21 @@ class Account {
     }
 }
 
+
+class SavingsAccount extends Account {
+    SavingsAccount(String accNo, String name, String address, String PhnNo, String DOB, double balance) {
+        super(accNo, name, address, PhnNo, DOB, balance);
+    }
+    void deposit(double amount) {
+        setbalance(getbalance() + amount);
+        System.out.println("Amount Deposited: " + amount);
+    }
+
+    void withdraw(double amount) {
+        setbalance(getbalance() - amount);
+        System.out.println("Amount Withdrawn: " + amount);
+    }
+}
 public class BankAccount {
     public static void main(String[] args) {
         
