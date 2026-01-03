@@ -8,11 +8,13 @@ class Phone {
 }
 
 interface iCamera {
-
+    void clickPicture();
+    void recordVideo();
 }
 
 interface iMusicPlayer {
-
+    void playMusic();
+    void stopMusic();
 }
 
 class SmartPhone extends Phone implements iCamera, iMusicPlayer{
