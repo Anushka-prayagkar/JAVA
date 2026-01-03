@@ -1,5 +1,6 @@
 abstract class Shapes {
-
+    abstract public double area();
+    abstract public double perimeter();
 }
 
 class Circle extends Shapes {
