@@ -18,7 +18,15 @@ class Store {
 }
 
 class Customer implements iMember {
+    String name;
 
+    Customer(String n) {
+        name = n;
+    }
+
+    public void callback() {
+        System.out.println("I will visit " + name);
+    }
 }
 
 public class StoreInterface {
