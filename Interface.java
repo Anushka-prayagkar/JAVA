@@ -18,7 +18,21 @@ interface iMusicPlayer {
 }
 
 class SmartPhone extends Phone implements iCamera, iMusicPlayer{
-
+    public void videoCall() {
+        System.out.println("SMart Phone video calling.");
+    }
+    public void clickPicture() {
+        System.out.println("Smart Phone clicking picture.");
+    }
+    public void recordVideo() {
+        System.out.println("Smart Phone recording video.");
+    }
+    public void playMusic() {
+        System.out.println("Smart Phone playing music.");
+    }
+    public void stopMusic() {
+        System.out.println("Smart Phone stop playing music.");
+    }
 }
 
 
