@@ -15,7 +15,15 @@ class Circle extends Shapes {
 }
 
 class Rectangle extends Shapes {
+    double length;
+    double breadth;
 
+    public double area() {
+        return length * breadth;
+    }
+    public double perimeter() {
+        return 2 * (length + breadth);
+    }
 }
 
 public class Shape {
