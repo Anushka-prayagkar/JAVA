@@ -31,6 +31,14 @@ class Customer implements iMember {
 
 public class StoreInterface {
     public static void main(String[] args) {
-    
+        Store s = new Store();
+
+        Customer c1 = new Customer("Anushka");
+        Customer c2 = new Customer("Prayagkar");
+
+        s.register(c1);
+        s.register(c2);
+
+        s.inviteSale();    
     }
 }
