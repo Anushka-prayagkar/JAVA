@@ -1,5 +1,5 @@
 interface iMember {
-
+    public void callback();
 }
 
 class Store {
