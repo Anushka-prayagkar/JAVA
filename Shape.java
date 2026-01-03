@@ -28,6 +28,11 @@ class Rectangle extends Shapes {
 
 public class Shape {
     public static void main(String[] args) {
-        
+        Rectangle r = new Rectangle();
+        r.length = 23;
+        r.breadth = 19;
+
+        Shapes s = r;
+        System.out.println(s.area());   
     }
 }
